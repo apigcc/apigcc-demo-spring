@@ -1,5 +1,6 @@
 package com.apigcc.example.common;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -30,6 +31,7 @@ public class UserDTO {
      * 生日，还是推荐使用javadoc
      */
     @NotNull
+    @JsonFormat(pattern = "yyyy-MM-dd")
     Date birthday;
     /**
      * 用户标签
@@ -43,6 +45,7 @@ public class UserDTO {
      */
     String[] icons;
 
+    //不支持Map，碰到Map忽略
     Map<String, String> attrs;
 
 
