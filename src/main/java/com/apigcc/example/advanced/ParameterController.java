@@ -12,7 +12,7 @@ public class ParameterController {
 
     /**
      * RequestParam
-     * @param value
+     * @param value 名称
      */
     @GetMapping
     public void get(@RequestParam(name = "name",required = false,defaultValue = "apigcc") String value){

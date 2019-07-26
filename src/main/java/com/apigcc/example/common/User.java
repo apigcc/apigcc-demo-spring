@@ -14,13 +14,28 @@ import java.util.List;
 @Getter
 public class User {
 
+    /**
+     * 主键
+     */
     int id;
+    /**
+     * 名称
+     */
     @NotBlank
     String name;
+    /**
+     * 年龄
+     */
     @Min(1)
     @NotNull
     Integer age;
+    /**
+     * 创建时间
+     */
     Date createAt;
+    /**
+     * 性别
+     */
     @NotBlank
     @JsonProperty("Sex")
     String sex;

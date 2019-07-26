@@ -8,6 +8,7 @@ import java.util.*;
  * 集合
  * 使用集合作为参数或返回值
  * @index 3
+ * @book collection
  */
 @RestController
 @RequestMapping("/collection")

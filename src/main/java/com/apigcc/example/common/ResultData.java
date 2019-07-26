@@ -13,6 +13,9 @@ public class ResultData<T> {
     int code;
     //返回信息
     String msg;
+    /**
+     * 返回数据
+     */
     T data;
 
     public static <T> ResultData<T> ok(){
