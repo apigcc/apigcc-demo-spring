@@ -22,6 +22,11 @@ public class UserController extends BaseController {
      * 用户详情信息
      * 根据id获取用户的信息
      *
+     * [TIP]
+     * 注意，不会返回密码
+     *
+     *
+     *
      * @param id 用户编号
      * @return
      */
@@ -76,6 +81,29 @@ public class UserController extends BaseController {
     public ResultData<Iterator<User>> list(@RequestParam(defaultValue = "1") int page,
                                            @RequestParam(defaultValue = "20") int size) {
         return ResultData.ok();
+    }
+
+    /**
+     * 用户信息分页查询
+     *
+     * @param page 页码
+     * @param size 每页条数
+     * @return
+     */
+    @RequestMapping("/list")
+    public ResultData<PageResult<User>> page(@RequestParam(defaultValue = "1") int page,
+                                           @RequestParam(defaultValue = "20") int size) {
+        return ResultData.ok();
+    }
+
+
+    /**
+     * 更新角色
+     * @return 是否成功
+     */
+    @PutMapping("role")
+    public Boolean role(){
+        return true;
     }
 
 }

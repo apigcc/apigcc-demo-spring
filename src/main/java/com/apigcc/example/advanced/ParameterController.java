@@ -1,5 +1,6 @@
 package com.apigcc.example.advanced;
 
+import com.apigcc.example.common.Menu;
 import com.apigcc.example.common.UserQuery;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,5 +36,12 @@ public class ParameterController {
     public void body(@RequestBody(required = false) UserQuery query){
 
     }
-
+    /**
+     * Menu
+     * @return
+     */
+    @GetMapping("menu")
+    public Menu menu(Menu menu){
+        return null;
+    }
 }
