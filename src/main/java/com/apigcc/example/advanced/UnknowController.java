@@ -1,6 +1,5 @@
 package com.apigcc.example.advanced;
 
-import com.apigcc.example.common.Menu;
 import com.apigcc.example.common.UserDTO;
 import org.jruby.ir.Tuple;
 import org.springframework.http.ResponseEntity;
