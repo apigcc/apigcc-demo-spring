@@ -36,6 +36,7 @@ public class ParameterController {
     public void body(@RequestBody(required = false) UserQuery query){
 
     }
+
     /**
      * Menu
      * @return
@@ -43,5 +44,15 @@ public class ParameterController {
     @GetMapping("menu")
     public Menu menu(Menu menu){
         return null;
+    }
+
+    /**
+     * Also Json Body When Not GetMapping
+     * @param name
+     * @param age
+     */
+    @PostMapping
+    public void post(String name, int age){
+
     }
 }
