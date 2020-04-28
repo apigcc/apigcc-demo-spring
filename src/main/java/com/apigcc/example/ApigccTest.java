@@ -1,7 +1,7 @@
 package com.apigcc.example;
 
-import com.apigcc.core.Apigcc;
-import com.apigcc.core.Context;
+import com.github.apigcc.core.Apigcc;
+import com.github.apigcc.core.Context;
 
 import java.nio.file.Paths;
 

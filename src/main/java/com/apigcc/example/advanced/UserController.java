@@ -99,7 +99,10 @@ public class UserController extends BaseController {
 
     /**
      * 更新角色
-     * @return 是否成功
+     * 注意：@return后的内容，将覆盖response
+     * 在返回字段较少，没有新建VO时，可以使用这种方式
+     * 其他情况还是建议使用VO
+     * @return true,false
      */
     @PutMapping("role")
     public Boolean role(){
